@@ -91,15 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Yetenek çubuklarını doğrudan aktifleştir
     const skillBars = document.querySelectorAll('.skill-level');
     
-    // Yetenek çubukları animasyonu - doğrudan çalıştır
-    skillBars.forEach((bar, index) => {
-        // Animasyon için önce 0 yap sonra %50'ye getir
-        bar.style.width = '0';
-        
-        setTimeout(() => {
-            bar.style.width = '50%';
-        }, 500 + (100 * index));
-    });
+    // Artık beceri seviyeleri CSS sınıflarıyla kontrol ediliyor
+    // JavaScript müdahale etmiyor
     
     // Telif yılını güncelle
     if (document.getElementById('current-year')) {

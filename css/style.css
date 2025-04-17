@@ -399,8 +399,28 @@ nav ul li a.active,
     color: #2496ED;
 }
 
+.blender-svg-logo {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover .blender-svg-logo {
+    transform: scale(1.1);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+
 .skill-cmake .fas.fa-tools {
     color: #064F8C; /* CMake rengi */
+}
+
+.skill-blender .skill-level {
+    background: linear-gradient(90deg, #E87D0D, #F5A742);
+}
+
+.skill-cmake .skill-level {
+    background: linear-gradient(90deg, #064F8C, #3a75a3);
 }
 
 .skill-maven .fas.fa-feather-alt {
@@ -443,7 +463,7 @@ nav ul li a.active,
 }
 
 .skill-bar::before {
-    content: "50%";
+    content: attr(data-level);
     position: absolute;
     right: 0;
     top: -18px;
@@ -470,6 +490,49 @@ nav ul li a.active,
     }
     100% {
         background-position: 100% 0;
+    }
+}
+
+/* Beceri seviyesi sabit sınıfları */
+.skill-level-25 {
+    width: 25% !important;
+    animation: skill-fill-25 1.5s ease-in-out forwards, shimmer 2s infinite;
+}
+
+.skill-level-50 {
+    width: 50% !important;
+    animation: skill-fill-50 1.5s ease-in-out forwards, shimmer 2s infinite;
+}
+
+.skill-level-75 {
+    width: 75% !important;
+    animation: skill-fill-75 1.5s ease-in-out forwards, shimmer 2s infinite;
+}
+
+@keyframes skill-fill-25 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25% !important;
+    }
+}
+
+@keyframes skill-fill-50 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50% !important;
+    }
+}
+
+@keyframes skill-fill-75 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75% !important;
     }
 }
 
@@ -511,10 +574,6 @@ nav ul li a.active,
 
 .skill-docker .skill-level {
     background: linear-gradient(90deg, #2496ED, #65bdfc);
-}
-
-.skill-cmake .skill-level {
-    background: linear-gradient(90deg, #064F8C, #3a75a3);
 }
 
 .skill-maven .skill-level {
