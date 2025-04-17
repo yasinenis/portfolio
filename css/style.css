@@ -345,7 +345,64 @@ nav ul li a.active,
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 123, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Her teknoloji için özel hover border renkleri */
+.skill-java:hover {
+    border: 1px solid rgba(0, 115, 150, 0.7) !important;
+}
+
+.skill-c:hover {
+    border: 1px solid rgba(168, 185, 204, 0.7) !important;
+}
+
+.skill-cpp:hover {
+    border: 1px solid rgba(0, 89, 156, 0.7) !important;
+}
+
+.skill-python:hover {
+    border: 1px solid rgba(55, 118, 171, 0.7) !important;
+}
+
+.skill-html:hover {
+    border: 1px solid rgba(227, 79, 38, 0.7) !important;
+}
+
+.skill-css:hover {
+    border: 1px solid rgba(21, 114, 182, 0.7) !important;
+}
+
+.skill-mysql:hover {
+    border: 1px solid rgba(68, 121, 161, 0.7) !important;
+}
+
+.skill-git:hover {
+    border: 1px solid rgba(240, 80, 50, 0.7) !important;
+}
+
+.skill-docker:hover {
+    border: 1px solid rgba(36, 150, 237, 0.7) !important;
+}
+
+.skill-blender:hover {
+    border: 1px solid rgba(232, 125, 13, 0.7) !important;
+}
+
+.skill-cmake:hover {
+    border: 1px solid rgba(6, 79, 140, 0.7) !important;
+}
+
+.skill-maven:hover {
+    border: 1px solid rgba(199, 26, 54, 0.7) !important;
+}
+
+.skill-windows:hover {
+    border: 1px solid rgba(0, 120, 214, 0.7) !important;
+}
+
+.skill-linux:hover {
+    border: 1px solid rgba(252, 198, 36, 0.7) !important;
 }
 
 .skill-icon {
@@ -450,6 +507,63 @@ nav ul li a.active,
 
 .skill-card:hover h3 {
     color: #007bff;
+}
+
+/* Her teknoloji için başlık renkleri */
+.skill-java:hover h3 {
+    color: #007396 !important;
+}
+
+.skill-c:hover h3 {
+    color: #A8B9CC !important;
+}
+
+.skill-cpp:hover h3 {
+    color: #00599C !important;
+}
+
+.skill-python:hover h3 {
+    color: #3776AB !important;
+}
+
+.skill-html:hover h3 {
+    color: #E34F26 !important;
+}
+
+.skill-css:hover h3 {
+    color: #1572B6 !important;
+}
+
+.skill-mysql:hover h3 {
+    color: #4479A1 !important;
+}
+
+.skill-git:hover h3 {
+    color: #F05032 !important;
+}
+
+.skill-docker:hover h3 {
+    color: #2496ED !important;
+}
+
+.skill-blender:hover h3 {
+    color: #E87D0D !important;
+}
+
+.skill-cmake:hover h3 {
+    color: #064F8C !important;
+}
+
+.skill-maven:hover h3 {
+    color: #C71A36 !important;
+}
+
+.skill-windows:hover h3 {
+    color: #0078D6 !important;
+}
+
+.skill-linux:hover h3 {
+    color: #FCC624 !important;
 }
 
 .skill-bar {
@@ -638,6 +752,19 @@ nav ul li a.active,
     border: 1px solid rgba(0, 123, 255, 0.5);
 }
 
+/* İletişim kartları için özel hover border renkleri */
+.contact-item:has(.fab.fa-linkedin):hover {
+    border: 1px solid rgba(0, 119, 181, 0.7) !important;
+}
+
+.contact-item:has(.fab.fa-github):hover {
+    border: 1px solid rgba(36, 41, 47, 0.7) !important;
+}
+
+.contact-item:has(.far.fa-envelope):hover {
+    border: 1px solid rgba(212, 70, 56, 0.7) !important;
+}
+
 .contact-item a {
     text-decoration: none;
     color: #333;
@@ -679,7 +806,20 @@ nav ul li a.active,
 }
 
 .contact-item:hover span {
-    color: #007bff;
+    /* Genel renk değişimi kaldırıldı */
+}
+
+/* İletişim kartları için metin renkleri */
+.contact-item:has(.fab.fa-linkedin):hover span {
+    color: #0077B5 !important;
+}
+
+.contact-item:has(.fab.fa-github):hover span {
+    color: #24292F !important;
+}
+
+.contact-item:has(.far.fa-envelope):hover span {
+    color: #D44638 !important;
 }
 
 /* Footer Stili */
