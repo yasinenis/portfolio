@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "section-egitim-period": "İkinci Sınıf (Tahmini Mezuniyet: 2027)",
             
             "section-iletisim-title": "İletişim",
+            "section-iletisim-email": "E-posta",
             
             // Footer
             "footer-copyright": "Tüm hakları saklıdır."
@@ -175,6 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "section-egitim-period": "Second Year (Expected Graduation: 2027)",
             
             "section-iletisim-title": "Contact",
+            "section-iletisim-email": "Email",
             
             // Footer
             "footer-copyright": "All rights reserved."

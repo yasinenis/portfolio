@@ -25,7 +25,7 @@ header {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 40, 0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(45, 0, 80, 0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -42,7 +42,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top right, rgba(54, 95, 255, 0.2), transparent 60%);
+    background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.2), transparent 60%);
     top: 0;
     left: 0;
     animation: pulse 8s ease-in-out infinite alternate;
@@ -110,7 +110,7 @@ header {
     position: absolute;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #007bff, transparent);
+    background: linear-gradient(90deg, #6a3de8, transparent);
     bottom: -5px;
     left: 25%;
     transform: translateX(-50%);
@@ -206,10 +206,10 @@ nav.scrolled ul li a {
 }
 
 nav.scrolled ul li a:hover {
-    background-color: #007bff;
+    background-color: #6a3de8;
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
 }
 
 nav ul {
@@ -235,16 +235,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #fff;
-    background-color: #007bff;
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    background-color: #6a3de8;
+    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
 }
 
 /* Aktif Menü Öğesi */
 nav ul li a.active,
 .hero-nav ul li a.active {
-    background-color: #007bff;
+    background-color: #6a3de8;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
 }
 
 /* Bölüm Stili */
@@ -270,18 +270,68 @@ nav ul li a.active,
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #007bff;
+    background-color: #6a3de8;
     margin: 15px auto 0;
 }
 
 /* Hakkımda Bölümü */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.profile-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    z-index: 1;
+}
+
+.profile-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(106, 61, 232, 0.2);
+    border: 3px solid rgba(106, 61, 232, 0.6);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.profile-image-container:hover .profile-image {
+    transform: scale(1.1);
+}
+
+.about-text {
+    flex-grow: 1;
+}
+
 #hakkimda p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     font-size: 18px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.7;
 }
 
 /* Yetenekler Bölümü */
@@ -299,10 +349,10 @@ nav ul li a.active,
     margin: 30px 0 15px;
     color: #333;
     text-align: left;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #6a3de8;
     padding-left: 15px;
     position: relative;
-    background-color: rgba(0, 123, 255, 0.05);
+    background-color: rgba(106, 61, 232, 0.05);
     padding: 8px 15px;
     border-radius: 0 5px 5px 0;
 }
@@ -322,7 +372,7 @@ nav ul li a.active,
     text-align: center;
     transition: all 0.5s ease;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 123, 255, 0.2);
+    border: 1px solid rgba(106, 61, 232, 0.2);
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
     opacity: 1;
     transform: translateY(0);
@@ -345,7 +395,7 @@ nav ul li a.active,
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(106, 61, 232, 0.6);
 }
 
 /* Her teknoloji için özel hover border renkleri */
@@ -506,7 +556,7 @@ nav ul li a.active,
 }
 
 .skill-card:hover h3 {
-    color: #007bff;
+    color: #6a3de8;
 }
 
 /* Her teknoloji için başlık renkleri */
@@ -650,56 +700,64 @@ nav ul li a.active,
     }
 }
 
-/* Programlama Dilleri */
+/* Beceri seviyeleri için mor renk tonları */
 .skill-java .skill-level {
-    background: linear-gradient(90deg, #007396, #5382a1);
+    background: linear-gradient(90deg, #8e44ad, #9b59b6);
 }
 
 .skill-c .skill-level {
-    background: linear-gradient(90deg, #A8B9CC, #d0d8e2);
+    background: linear-gradient(90deg, #7d3c98, #a569bd);
 }
 
 .skill-cpp .skill-level {
-    background: linear-gradient(90deg, #00599C, #659ad2);
+    background: linear-gradient(90deg, #6c3483, #884ea0);
 }
 
 .skill-python .skill-level {
-    background: linear-gradient(90deg, #3776AB, #74a9e6);
+    background: linear-gradient(90deg, #5b2c6f, #7d3c98);
 }
 
 /* Web Geliştirme */
 .skill-html .skill-level {
-    background: linear-gradient(90deg, #E34F26, #f06529);
+    background: linear-gradient(90deg, #8e44ad, #bb8fce);
 }
 
 .skill-css .skill-level {
-    background: linear-gradient(90deg, #1572B6, #5badf0);
+    background: linear-gradient(90deg, #6a3de8, #9b59b6);
 }
 
 /* Veritabanları */
 .skill-mysql .skill-level {
-    background: linear-gradient(90deg, #4479A1, #6bb1e3);
+    background: linear-gradient(90deg, #5b2c6f, #8e44ad);
 }
 
 /* Araçlar & Teknolojiler */
 .skill-git .skill-level {
-    background: linear-gradient(90deg, #F05032, #f27057);
+    background: linear-gradient(90deg, #6a3de8, #a569bd);
 }
 
 .skill-docker .skill-level {
-    background: linear-gradient(90deg, #2496ED, #65bdfc);
+    background: linear-gradient(90deg, #7d3c98, #9b59b6);
+}
+
+.skill-blender .skill-level {
+    background: linear-gradient(90deg, #8e44ad, #bb8fce);
+}
+
+.skill-cmake .skill-level {
+    background: linear-gradient(90deg, #5b2c6f, #7d3c98);
 }
 
 .skill-maven .skill-level {
-    background: linear-gradient(90deg, #C71A36, #e55471);
+    background: linear-gradient(90deg, #6c3483, #9b59b6);
 }
 
 .skill-windows .skill-level {
-    background: linear-gradient(90deg, #0078D6, #45a7ff);
+    background: linear-gradient(90deg, #6a3de8, #a569bd);
 }
 
 .skill-linux .skill-level {
-    background: linear-gradient(90deg, #FCC624, #ffd65c);
+    background: linear-gradient(90deg, #8e44ad, #bb8fce);
 }
 
 @keyframes skill-fill {
@@ -729,7 +787,7 @@ nav ul li a.active,
     transition: transform 0.3s, box-shadow 0.3s;
     width: 200px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 123, 255, 0.2);
+    border: 1px solid rgba(106, 61, 232, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -749,7 +807,7 @@ nav ul li a.active,
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 123, 255, 0.5);
+    border: 1px solid rgba(106, 61, 232, 0.5);
 }
 
 /* İletişim kartları için özel hover border renkleri */
@@ -794,7 +852,7 @@ nav ul li a.active,
     color: #24292F;
 }
 
-/* E-posta simgesi rengi */
+/* Email simgesi rengi */
 .far.fa-envelope {
     color: #D44638;
 }
@@ -824,7 +882,7 @@ nav ul li a.active,
 
 /* Footer Stili */
 footer {
-    background: linear-gradient(180deg, #343a40, #212529);
+    background: linear-gradient(180deg, #2d1a4c, #1a0f2e);
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -837,7 +895,7 @@ footer::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at bottom left, rgba(54, 95, 255, 0.1), transparent 60%);
+    background: radial-gradient(circle at bottom left, rgba(138, 43, 226, 0.1), transparent 60%);
     top: 0;
     left: 0;
     animation: pulse 8s ease-in-out infinite alternate;
@@ -902,6 +960,19 @@ footer p {
     .skill-card {
         padding: 20px;
     }
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image-container {
+        margin: 0 auto 30px;
+    }
+    
+    #hakkimda p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -923,12 +994,45 @@ footer p {
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #6a3de8;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 123, 255, 0.2);
+    border: 1px solid rgba(106, 61, 232, 0.2);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-logo-container {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.university-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover .education-logo-container {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.education-content {
+    flex-grow: 1;
 }
 
 .education-item::before {
@@ -946,13 +1050,13 @@ footer p {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border-left: 4px solid #007bff;
-    border-top: 1px solid rgba(0, 123, 255, 0.5);
-    border-right: 1px solid rgba(0, 123, 255, 0.5);
-    border-bottom: 1px solid rgba(0, 123, 255, 0.5);
+    border-left: 4px solid #6a3de8;
+    border-top: 1px solid rgba(106, 61, 232, 0.5);
+    border-right: 1px solid rgba(106, 61, 232, 0.5);
+    border-bottom: 1px solid rgba(106, 61, 232, 0.5);
 }
 
-.education-item h3 {
+.education-content h3 {
     font-size: 22px;
     margin-bottom: 15px;
     color: #333;
@@ -960,18 +1064,18 @@ footer p {
     padding-bottom: 10px;
 }
 
-.education-item h3::after {
+.education-content h3::after {
     content: '';
     position: absolute;
     width: 50px;
     height: 2px;
-    background-color: #007bff;
+    background-color: #6a3de8;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
 }
 
-.education-item:hover h3::after {
+.education-item:hover .education-content h3::after {
     width: 100px;
 }
 
@@ -1001,7 +1105,7 @@ footer p {
     padding: 50px 30px;
     text-align: center;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    border: 1px solid rgba(0, 123, 255, 0.2);
+    border: 1px solid rgba(106, 61, 232, 0.2);
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
     position: relative;
@@ -1023,16 +1127,16 @@ footer p {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 123, 255, 0.5);
+    border: 1px solid rgba(106, 61, 232, 0.5);
 }
 
 .coming-soon-container i {
     font-size: 60px;
-    color: #007bff;
+    color: #6a3de8;
     margin-bottom: 20px;
     display: block;
     animation: pulse-icon 2s infinite alternate;
-    filter: drop-shadow(0 0 15px rgba(0, 123, 255, 0.3));
+    filter: drop-shadow(0 0 15px rgba(106, 61, 232, 0.3));
 }
 
 @keyframes pulse-icon {
@@ -1059,7 +1163,7 @@ footer p {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #007bff;
+    background-color: #6a3de8;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
@@ -1129,7 +1233,7 @@ footer p {
 
 .lang-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 20px rgba(106, 61, 232, 0.3);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
