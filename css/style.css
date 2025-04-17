@@ -907,22 +907,28 @@ footer p {
 /* Responsive Stiller */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
     
     .hero p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    
+    .hero-nav {
+        bottom: 30px;
     }
     
     .hero-nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
     
     .hero-nav ul li a {
-        padding: 12px 25px;
-        font-size: 16px;
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
     }
     
     nav ul {
@@ -931,7 +937,12 @@ footer p {
     }
     
     .section {
-        padding: 60px 0;
+        padding: 40px 0;
+    }
+    
+    .section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
     }
     
     .contact-info {
@@ -941,35 +952,175 @@ footer p {
     
     .contact-item {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
     }
     
     .skill-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
     }
     
     .skill-card {
-        padding: 20px;
+        padding: 15px 10px;
+    }
+    
+    .skill-icon {
+        font-size: 32px;
+        height: 40px;
+    }
+    
+    .skill-card h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
     }
     
     .about-content {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
     
     .profile-image-container {
-        margin: 0 auto 30px;
+        margin: 0 auto 20px;
+        width: 150px;
+        height: 150px;
     }
     
     #hakkimda p {
         text-align: center;
+        font-size: 16px;
+    }
+    
+    .education-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .education-logo-container {
+        margin-bottom: 15px;
+    }
+    
+    .coming-soon-container {
+        padding: 30px 20px;
+    }
+    
+    .coming-soon-container i {
+        font-size: 40px;
+    }
+    
+    .coming-soon-container h3 {
+        font-size: 22px;
+    }
+    
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lang-btn {
+        width: 40px;
+        height: 40px;
     }
 }
 
 @media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 14px;
+    }
+    
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .skill-card {
+        padding: 12px 8px;
+    }
+    
+    .skill-icon {
+        font-size: 28px;
+        height: 36px;
+        margin-bottom: 8px;
+    }
+    
+    .blender-svg-logo, .cmake-svg-logo, .c-svg-logo {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .skill-card h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .skill-category-title {
+        font-size: 18px;
+        margin: 25px 0 10px;
+        padding: 6px 12px;
+    }
+    
+    .section h2 {
+        font-size: 24px;
+    }
+    
+    #hakkimda p {
+        font-size: 14px;
+    }
+    
+    .education-content h3 {
+        font-size: 18px;
+    }
+    
+    .education-program {
+        font-size: 16px;
+    }
+    
+    .education-period {
+        font-size: 14px;
+    }
+    
+    .contact-item i {
+        font-size: 28px;
+    }
+    
+    .contact-item span {
+        font-size: 16px;
+    }
+    
+    .hero-nav ul li a {
+        width: 180px;
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Özellikle küçük telefonlar için ek düzenlemeler */
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    
+    .hero p {
+        font-size: 13px;
+    }
+    
+    .hero-nav ul li a {
+        width: 160px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
     .skill-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .skill-card {
+        max-width: 200px;
+        margin: 0 auto;
     }
 }
 
