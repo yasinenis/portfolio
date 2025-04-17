@@ -25,7 +25,7 @@ header {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(45, 0, 80, 0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 40, 0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -42,7 +42,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.2), transparent 60%);
+    background: radial-gradient(circle at top right, rgba(54, 95, 255, 0.2), transparent 60%);
     top: 0;
     left: 0;
     animation: pulse 8s ease-in-out infinite alternate;
@@ -110,7 +110,7 @@ header {
     position: absolute;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #6a3de8, transparent);
+    background: linear-gradient(90deg, #007bff, transparent);
     bottom: -5px;
     left: 25%;
     transform: translateX(-50%);
@@ -206,10 +206,10 @@ nav.scrolled ul li a {
 }
 
 nav.scrolled ul li a:hover {
-    background-color: #6a3de8;
+    background-color: #007bff;
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
 nav ul {
@@ -235,16 +235,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #fff;
-    background-color: #6a3de8;
-    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
+    background-color: #007bff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
 /* Aktif Menü Öğesi */
 nav ul li a.active,
 .hero-nav ul li a.active {
-    background-color: #6a3de8;
+    background-color: #007bff;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(106, 61, 232, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
 /* Bölüm Stili */
@@ -270,7 +270,7 @@ nav ul li a.active,
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #6a3de8;
+    background-color: #007bff;
     margin: 15px auto 0;
 }
 
@@ -308,8 +308,8 @@ nav ul li a.active,
 
 .profile-image-container:hover {
     transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(106, 61, 232, 0.2);
-    border: 3px solid rgba(106, 61, 232, 0.6);
+    box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
+    border: 3px solid rgba(0, 123, 255, 0.6);
 }
 
 .profile-image {
@@ -349,10 +349,10 @@ nav ul li a.active,
     margin: 30px 0 15px;
     color: #333;
     text-align: left;
-    border-left: 4px solid #6a3de8;
+    border-left: 4px solid #007bff;
     padding-left: 15px;
     position: relative;
-    background-color: rgba(106, 61, 232, 0.05);
+    background-color: rgba(0, 123, 255, 0.05);
     padding: 8px 15px;
     border-radius: 0 5px 5px 0;
 }
@@ -372,7 +372,7 @@ nav ul li a.active,
     text-align: center;
     transition: all 0.5s ease;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(106, 61, 232, 0.2);
+    border: 1px solid rgba(0, 123, 255, 0.2);
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
     opacity: 1;
     transform: translateY(0);
@@ -395,7 +395,7 @@ nav ul li a.active,
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(106, 61, 232, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 /* Her teknoloji için özel hover border renkleri */
@@ -556,7 +556,7 @@ nav ul li a.active,
 }
 
 .skill-card:hover h3 {
-    color: #6a3de8;
+    color: #007bff;
 }
 
 /* Her teknoloji için başlık renkleri */
@@ -700,64 +700,56 @@ nav ul li a.active,
     }
 }
 
-/* Beceri seviyeleri için mor renk tonları */
+/* Programlama Dilleri */
 .skill-java .skill-level {
-    background: linear-gradient(90deg, #8e44ad, #9b59b6);
+    background: linear-gradient(90deg, #007396, #5382a1);
 }
 
 .skill-c .skill-level {
-    background: linear-gradient(90deg, #7d3c98, #a569bd);
+    background: linear-gradient(90deg, #A8B9CC, #d0d8e2);
 }
 
 .skill-cpp .skill-level {
-    background: linear-gradient(90deg, #6c3483, #884ea0);
+    background: linear-gradient(90deg, #00599C, #659ad2);
 }
 
 .skill-python .skill-level {
-    background: linear-gradient(90deg, #5b2c6f, #7d3c98);
+    background: linear-gradient(90deg, #3776AB, #74a9e6);
 }
 
 /* Web Geliştirme */
 .skill-html .skill-level {
-    background: linear-gradient(90deg, #8e44ad, #bb8fce);
+    background: linear-gradient(90deg, #E34F26, #f06529);
 }
 
 .skill-css .skill-level {
-    background: linear-gradient(90deg, #6a3de8, #9b59b6);
+    background: linear-gradient(90deg, #1572B6, #5badf0);
 }
 
 /* Veritabanları */
 .skill-mysql .skill-level {
-    background: linear-gradient(90deg, #5b2c6f, #8e44ad);
+    background: linear-gradient(90deg, #4479A1, #6bb1e3);
 }
 
 /* Araçlar & Teknolojiler */
 .skill-git .skill-level {
-    background: linear-gradient(90deg, #6a3de8, #a569bd);
+    background: linear-gradient(90deg, #F05032, #f27057);
 }
 
 .skill-docker .skill-level {
-    background: linear-gradient(90deg, #7d3c98, #9b59b6);
-}
-
-.skill-blender .skill-level {
-    background: linear-gradient(90deg, #8e44ad, #bb8fce);
-}
-
-.skill-cmake .skill-level {
-    background: linear-gradient(90deg, #5b2c6f, #7d3c98);
+    background: linear-gradient(90deg, #2496ED, #65bdfc);
 }
 
 .skill-maven .skill-level {
-    background: linear-gradient(90deg, #6c3483, #9b59b6);
+    background: linear-gradient(90deg, #C71A36, #e55471);
 }
 
 .skill-windows .skill-level {
-    background: linear-gradient(90deg, #6a3de8, #a569bd);
+    background: linear-gradient(90deg, #0078D6, #45a7ff);
 }
 
 .skill-linux .skill-level {
-    background: linear-gradient(90deg, #8e44ad, #bb8fce);
+    background: linear-gradient(90deg, #FCC624, #ffd65c);
 }
 
 @keyframes skill-fill {
@@ -787,7 +779,7 @@ nav ul li a.active,
     transition: transform 0.3s, box-shadow 0.3s;
     width: 200px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(106, 61, 232, 0.2);
+    border: 1px solid rgba(0, 123, 255, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -807,7 +799,7 @@ nav ul li a.active,
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(106, 61, 232, 0.5);
+    border: 1px solid rgba(0, 123, 255, 0.5);
 }
 
 /* İletişim kartları için özel hover border renkleri */
@@ -882,7 +874,7 @@ nav ul li a.active,
 
 /* Footer Stili */
 footer {
-    background: linear-gradient(180deg, #2d1a4c, #1a0f2e);
+    background: linear-gradient(180deg, #343a40, #212529);
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -895,7 +887,7 @@ footer::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at bottom left, rgba(138, 43, 226, 0.1), transparent 60%);
+    background: radial-gradient(circle at bottom left, rgba(54, 95, 255, 0.1), transparent 60%);
     top: 0;
     left: 0;
     animation: pulse 8s ease-in-out infinite alternate;
@@ -994,10 +986,10 @@ footer p {
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    border-left: 4px solid #6a3de8;
+    border-left: 4px solid #007bff;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(106, 61, 232, 0.2);
+    border: 1px solid rgba(0, 123, 255, 0.2);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1050,10 +1042,10 @@ footer p {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border-left: 4px solid #6a3de8;
-    border-top: 1px solid rgba(106, 61, 232, 0.5);
-    border-right: 1px solid rgba(106, 61, 232, 0.5);
-    border-bottom: 1px solid rgba(106, 61, 232, 0.5);
+    border-left: 4px solid #007bff;
+    border-top: 1px solid rgba(0, 123, 255, 0.5);
+    border-right: 1px solid rgba(0, 123, 255, 0.5);
+    border-bottom: 1px solid rgba(0, 123, 255, 0.5);
 }
 
 .education-content h3 {
@@ -1069,7 +1061,7 @@ footer p {
     position: absolute;
     width: 50px;
     height: 2px;
-    background-color: #6a3de8;
+    background-color: #007bff;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -1105,7 +1097,7 @@ footer p {
     padding: 50px 30px;
     text-align: center;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    border: 1px solid rgba(106, 61, 232, 0.2);
+    border: 1px solid rgba(0, 123, 255, 0.2);
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
     position: relative;
@@ -1127,16 +1119,16 @@ footer p {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(31, 38, 135, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(106, 61, 232, 0.5);
+    border: 1px solid rgba(0, 123, 255, 0.5);
 }
 
 .coming-soon-container i {
     font-size: 60px;
-    color: #6a3de8;
+    color: #007bff;
     margin-bottom: 20px;
     display: block;
     animation: pulse-icon 2s infinite alternate;
-    filter: drop-shadow(0 0 15px rgba(106, 61, 232, 0.3));
+    filter: drop-shadow(0 0 15px rgba(0, 123, 255, 0.3));
 }
 
 @keyframes pulse-icon {
@@ -1163,7 +1155,7 @@ footer p {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #6a3de8;
+    background-color: #007bff;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
@@ -1233,7 +1225,7 @@ footer p {
 
 .lang-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 7px 20px rgba(106, 61, 232, 0.3);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
