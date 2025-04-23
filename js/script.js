@@ -48,6 +48,35 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sayfa yüklendiğinde aktif bölümü ayarla
     setActiveSection();
     
+    // Daha yumuşak ve yavaş animasyonlu scroll fonksiyonu
+    function smoothScroll(targetElement, duration) {
+        const targetPosition = targetElement.offsetTop - (navbar?.offsetHeight || 0);
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+        
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const scrollY = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, scrollY);
+            
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+        
+        // Yumuşak geçiş için easing fonksiyonu
+        function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+        
+        requestAnimationFrame(animation);
+    }
+    
     // Smooth scroll için tüm navigasyon linklerini ayarla (hero nav)
     document.querySelectorAll('.hero-nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -57,10 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - (navbar?.offsetHeight || 0),
-                    behavior: 'smooth'
-                });
+                // Daha uzun bir süre (2000ms = 2 saniye) ile yumuşak geçiş
+                smoothScroll(targetElement, 1200);
                 
                 // Tüm aktif sınıfları kaldır
                 heroNavLinks.forEach(link => link.classList.remove('active'));
