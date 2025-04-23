@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasin Eniş - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dil değiştirme butonu -->
+    <div class="language-switcher">
+        <button id="langToggle" class="lang-btn" title="Change Language">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English" id="lang-icon" class="lang-icon">
+        </button>
+    </div>
+
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Merhaba, Ben Yasin Eniş</h1>
+                <p>Bilgisayar Mühendisliği Öğrencisi & Teknoloji Tutkunu</p>
+            </div>
+            <div class="hero-nav">
+                <ul>
+                    <li><a href="#hakkimda"><i class="fas fa-user-circle"></i> <span class="nav-text">Hakkımda</span></a></li>
+                    <li><a href="#yetenekler"><i class="fas fa-code"></i> <span class="nav-text">Yeteneklerim</span></a></li>
+                    <li><a href="#projelerim"><i class="fas fa-project-diagram"></i> <span class="nav-text">Projelerim</span></a></li>
+                    <li><a href="#egitim"><i class="fas fa-graduation-cap"></i> <span class="nav-text">Eğitim</span></a></li>
+                    <li><a href="#iletisim"><i class="fas fa-envelope"></i> <span class="nav-text">İletişim</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="hakkimda" class="section">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <img src="images/me.jpg" alt="Yasin Eniş" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <p>Merhaba! Ben Yasin Eniş. Bilgisayar Mühendisliği ikinci sınıf öğrencisiyim ve teknoloji alanında tutkulu biriyim. Yeni projeler geliştirmeye ve heyecan verici projelere katkıda bulunmaya her zaman istekliyim.</p>
+                    <p>Çeşitli programlama dilleri ve teknolojilerdeki becerilerim sayesinde, farklı problemleri çözmek ve yaratıcı çözümler üretmek için çalışıyorum. Bu web sitesi, becerilerimi ve deneyimlerimi paylaşmak için oluşturulmuştur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yetenekler" class="section">
+        <div class="container">
+            <h2>Yeteneklerim</h2>
+            <div class="skills">
+                <h3 class="skill-category-title">Programlama Dilleri</h3>
+                <div class="skill-grid">
+                    <div class="skill-card skill-c">
+                        <div class="skill-icon">
+                            <i class="fab fa-cuttlefish"></i>
+                        </div>
+                        <h3>C</h3>
+                        <div class="skill-bar" data-level="75%">
+                            <div class="skill-level skill-level-75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-cpp">
+                        <div class="skill-icon">
+                            <i class="fab fa-cpp"></i>
+                        </div>
+                        <h3>C++</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-java">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-bar" data-level="25%">
+                            <div class="skill-level skill-level-25"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-python">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-bar" data-level="25%">
+                            <div class="skill-level skill-level-25"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="skill-category-title">Web Geliştirme</h3>
+                <div class="skill-grid">
+                    <div class="skill-card skill-html">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-css">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="skill-category-title">Veritabanları</h3>
+                <div class="skill-grid">
+                    <div class="skill-card skill-mysql">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="skill-category-title">Araçlar & Teknolojiler</h3>
+                <div class="skill-grid">
+                    <div class="skill-card skill-git">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-docker">
+                        <div class="skill-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h3>Docker</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-blender">
+                        <div class="skill-icon">
+                            <svg class="blender-svg-logo" width="50" height="50" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#E87D0D" d="M189.77 119.92l-96.85 241.45h117.27l19.61-58.83h73.78l19.61 58.83h96.86L320.75 119.92H189.77zm65.41 156.9l24.65-74.78 24.37 74.78h-49.02z"/>
+                                <path fill="#E87D0D" d="M256 150c57.9 0 105 47.1 105 105s-47.1 105-105 105-105-47.1-105-105 47.1-105 105-105z"/>
+                                <path fill="#fff" d="M256 180c41.4 0 75 33.6 75 75s-33.6 75-75 75-75-33.6-75-75 33.6-75 75-75z"/>
+                                <path fill="#263238" d="M256 210c24.8 0 45 20.2 45 45s-20.2 45-45 45-45-20.2-45-45 20.2-45 45-45z"/>
+                            </svg>
+                        </div>
+                        <h3>Blender</h3>
+                        <div class="skill-bar" data-level="50%">
+                            <div class="skill-level skill-level-50"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-cmake">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>CMake</h3>
+                        <div class="skill-bar" data-level="25%">
+                            <div class="skill-level skill-level-25"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-maven">
+                        <div class="skill-icon">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <h3>Maven</h3>
+                        <div class="skill-bar" data-level="25%">
+                            <div class="skill-level skill-level-25"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-windows">
+                        <div class="skill-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h3>Windows</h3>
+                        <div class="skill-bar" data-level="75%">
+                            <div class="skill-level skill-level-75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card skill-linux">
+                        <div class="skill-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3>Linux</h3>
+                        <div class="skill-bar" data-level="25%">
+                            <div class="skill-level skill-level-25"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="egitim" class="section">
+        <div class="container">
+            <h2>Eğitim</h2>
+            <div class="education">
+                <div class="education-item">
+                    <div class="education-logo-container">
+                        <img src="images/RTEU-EN LOGO.png" alt="Recep Tayyip Erdoğan Üniversitesi" class="university-logo">
+                    </div>
+                    <div class="education-content">
+                        <h3>Recep Tayyip Erdoğan Üniversitesi</h3>
+                        <p class="education-program">Bilgisayar Mühendisliği</p>
+                        <p class="education-period">İkinci Sınıf (Tahmini Mezuniyet: 2027)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projelerim" class="section">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="projects-coming-soon">
+                <div class="coming-soon-container">
+                    <i class="fas fa-hourglass-half"></i>
+                    <h3>Yakında</h3>
+                    <p>Projelerim bu bölümde yakında paylaşılacaktır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2>İletişim</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/yasin-eniş/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/yasinenis" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:yasin.enis.tr@gmail.com">
+                        <i class="far fa-envelope"></i>
+                        <span data-lang="section-iletisim-email">Email</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- İletişim formu -->
+            <div class="contact-form-container">
+                <h3 data-lang="contact-form-title">Benimle İletişime Geçin</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-lang="contact-form-name">Ad Soyad</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-lang="contact-form-email">E-posta</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-lang="contact-form-subject">Konu</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-lang="contact-form-message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-lang="contact-form-submit">Gönder</button>
+                </form>
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Yasin Eniş. <span data-lang="footer-copyright">Tüm hakları saklıdır.</span> | <a href="privacy-policy.html" class="footer-link" data-lang="footer-privacy">Gizlilik Politikası</a></p>
+        </div>
+    </footer>
+
+    <!-- Yapılandırma dosyası (API anahtarlarını içerir, .gitignore'da yer almalıdır) -->
+    <script src="config.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="js/visitor-counter.js"></script>
+</body>
+</html> 
