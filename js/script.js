@@ -130,6 +130,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const langToggle = document.getElementById('langToggle');
     const langIcon = document.getElementById('lang-icon');
     
+    // Sınıf hesaplama
+    function calculateGrade() {
+        const startYear = 2023;
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const currentMonth = currentDate.getMonth(); // 0-11
+        let grade = currentYear - startYear + (currentMonth >= 8 ? 1 : 0);
+        if (grade > 4) grade = 4;
+        if (grade < 1) grade = 1;
+        return grade;
+    }
+    const grade = calculateGrade();
+    const gradeNumbersTR = ["birinci", "ikinci", "üçüncü", "dördüncü"];
+    const gradeNumbersEN = ["first", "second", "third", "fourth"];
+    const gradeStrTR = gradeNumbersTR[grade - 1] || "dördüncü";
+    const gradeStrEN = gradeNumbersEN[grade - 1] || "fourth";
+    const gradeCapitalizedTR = gradeStrTR.charAt(0).toUpperCase() + gradeStrTR.slice(1);
+    const gradeCapitalizedEN = gradeStrEN.charAt(0).toUpperCase() + gradeStrEN.slice(1);
+
     // Dil çevirisi metinleri
     const translations = {
         tr: {
@@ -146,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Sections
             "section-hakkimda-title": "Hakkımda",
-            "section-hakkimda-p1": "Merhaba! Ben Yasin Eniş. Bilgisayar Mühendisliği ikinci sınıf öğrencisiyim ve teknoloji alanında tutkulu biriyim. Yeni projeler geliştirmeye ve heyecan verici projelere katkıda bulunmaya her zaman istekliyim.",
+            "section-hakkimda-p1": `Merhaba! Ben Yasin Eniş. Bilgisayar Mühendisliği ${gradeStrTR} sınıf öğrencisiyim ve teknoloji alanında tutkulu biriyim. Yeni projeler geliştirmeye ve heyecan verici projelere katkıda bulunmaya her zaman istekliyim.`,
             "section-hakkimda-p2": "Çeşitli programlama dilleri ve teknolojilerdeki becerilerim sayesinde, farklı problemleri çözmek ve yaratıcı çözümler üretmek için çalışıyorum. Bu web sitesi, becerilerimi ve deneyimlerimi paylaşmak için oluşturulmuştur.",
             
             "section-yetenekler-title": "Yeteneklerim",
@@ -162,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "section-egitim-title": "Eğitim",
             "section-egitim-uni": "Recep Tayyip Erdoğan Üniversitesi",
             "section-egitim-program": "Bilgisayar Mühendisliği",
-            "section-egitim-period": "İkinci Sınıf (Tahmini Mezuniyet: 2027)",
+            "section-egitim-period": `${gradeCapitalizedTR} Sınıf (Tahmini Mezuniyet: 2027)`,
             
             "section-iletisim-title": "İletişim",
             "section-iletisim-email": "E-posta",
@@ -184,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Sections
             "section-hakkimda-title": "About Me",
-            "section-hakkimda-p1": "Hello! I'm Yasin Eniş. I'm a second-year Computer Engineering student and passionate about technology. I'm always eager to develop new projects and contribute to exciting projects.",
+            "section-hakkimda-p1": `Hello! I'm Yasin Eniş. I'm a ${gradeStrEN}-year Computer Engineering student and passionate about technology. I'm always eager to develop new projects and contribute to exciting projects.`,
             "section-hakkimda-p2": "With my skills in various programming languages and technologies, I work to solve different problems and create innovative solutions. This website was created to share my skills and experiences.",
             
             "section-yetenekler-title": "My Skills",
@@ -200,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "section-egitim-title": "Education",
             "section-egitim-uni": "Recep Tayyip Erdoğan University",
             "section-egitim-program": "Computer Engineering",
-            "section-egitim-period": "Second Year (Expected Graduation: 2027)",
+            "section-egitim-period": `${gradeCapitalizedEN} Year (Expected Graduation: 2027)`,
             
             "section-iletisim-title": "Contact",
             "section-iletisim-email": "Email",
